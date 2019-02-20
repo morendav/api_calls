@@ -1,0 +1,15 @@
+{
+  "comments": "testing_in_lower_env",
+  "approvalRequired": false,
+  "bulkRequests": [
+    {
+      "someJsonAction": "action1"
+    },
+    {
+      "someJsonAction": "action1"
+    },
+    {
+      "someJsonAction": "action1"
+    }
+  ]
+}

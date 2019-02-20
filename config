@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#######################################
+### Token Auth Transfer - Config File
+#
+#     set basic config for token transfer script
+#######################################
+###     Config: InitVar
+#######################################
+TIMESTAMP=`date "+%Y-%m-%d %H:%M:%S"`
+
+# Directory Definitions
+currentDir=$(pwd)                         # Current deployment directory
+LoggingDir="$currentDir/logs"             # Logging directory
+RemovalsDir="$currentDir/remediation"     # Removals JSON directory
+KeyDir="$currentDir/bin/secrets"          # RSA Credentials directory
+AncillaryBin="$currentDir/bin"            # support applicaiton scripts are stored here
+
+# Directory locations
+LOGFILE="$LoggingDir/script_$(date "+%m%d%Y").log"    # Log file location
+REMOVALS_JSON="@$RemovalsDir/addbulk.json"            # Removals JSON file
+LLAVE="$KeyDir/llave.bin"                             # RSA Key
+CRED_DIRECTORY="$KeyDir/secret.bin"                   # Credentials
+
+# Vault Secret locations
+VAULT_LOC='some_top_secret_API_vault_location'
+
+# Rogue system service account name
+ROGUESVC="svc_goes_here"
