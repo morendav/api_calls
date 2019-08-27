@@ -1,4 +1,4 @@
-# Rogue Access Management 2.0
+# RAM 2
 
 Makes various API calls, passes parameters between shell scripts.
 
